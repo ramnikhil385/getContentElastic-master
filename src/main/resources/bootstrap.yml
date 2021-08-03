@@ -1,0 +1,13 @@
+---
+spring:
+  application:
+    name: doc360restgetcontent
+  profiles:
+    active: ${SERVICE_ENV:default}
+  cloud:
+    config:
+      label: ${SERVICE_HOST:default}
+      uri: http://configserver-doc360-prd.origin-ctc-core.optum.com
+jasypt:
+  encryptor:
+    password: a$nK.E)nQ2%8GcI
